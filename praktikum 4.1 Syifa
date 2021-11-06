@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">			
+			<center><h1>Website baru belajar</h1></center>
+            <hr style="color:black"/>
+			<p>Belajar membuat layout website sederhana</p>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">login</a></li>
+				<li><a href="#">home</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">logout</a></li>				
+			</ul>
+		</div>
+		<div class="badan">			
+			<div class="sidebar">
+				<h4> Social Media </h4>
+				<ul>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Gmail</a></li>		
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.317520758509!2d106.8304348147699!3d-6.352924495402733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec3b080efe51%3A0x944a45273e98befd!2sSTT%20Terpadu%20Nurul%20Fikri%20-%20Kampus%20B!5e0!3m2!1sen!2sid!4v1635858674333!5m2!1sen!2sid" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</ul>
+			</div>
+			<div class="content">
+				<center><h2>Mengenal Bahasa Pemrograman HTML FORM</h2></center>
+                <p>Form digunakan untuk mengumpulkan data/informasi dari pengguna, data akan di proses di Server dengan Aplikasi Web. Data yang dikirim oleh form akan di proses pada program di sisi server yaitu: PHP, ASP ,JSP, Python, Ruby, C# .NET. HTML5 Input Type: Inputan user diarahkan sesuai dengan kebutuhan aplikasi, Meminimalkan kesalahan input, Gunakan tag <label> untuk arahan informasi inputan yang berkesesuaian.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/akmFN_DKfeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <fieldset style="float: right; margin-right:10px;">
+                <iframe width="250" height="150" src="https://nurulfikri.ac.id/"
+                        frameborder="0"></iframe>
+                </fieldset>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<center><h3>Sistem Informasi 2021</h3></center>
+		</div>
+	</div>
+</body>
+</html>
