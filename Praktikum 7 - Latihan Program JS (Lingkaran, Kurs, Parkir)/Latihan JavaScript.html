@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript</title>
+    <script>
+        //Menghitung luas dan keliling lingkaran
+        function luas_lingkaran() {
+            const phi = 3.14;
+            let bil1 = document.getElementById("jari_jari").value;
+            console.log("phi : " + phi);
+            console.log("Jari-jari : " + bil1);
+            let luas = phi * bil1 * bil1;
+            console.log("Luas : " + luas);
+            let keliling = phi * (2*bil1);
+            console.log ("Keliling : " + keliling);
+            //menampilkan luas dan keliling lingkaran ke HTML
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "Luas : " + luas + "\n Keliling :" + keliling;
+        }
+
+        //Menghitung kurs rupiah
+        function kurs_rupiah() {
+            const rupiah = 14650;
+            let bil2 = document.getElementById("rupiah").value;
+            console.log("Satu Dolar : " + rupiah + " rupiah");
+            let dolar = bil2 / rupiah;
+            console.log("Hasil : " + "$" +dolar);
+            //menampilkan kurs dolar ke HTML
+            let hasil_kurs = document.getElementById("hasil_kedua");
+            hasil_kurs.innerHTML = "Nilai kurs dolar : " +"$"+ dolar;
+        }
+
+        //Menghitung biaya parkir
+        function hitung_biaya_parkir() {
+            let jam_masuk = document.getElementById("masuk").value;
+            let jam_keluar = document.getElementById("keluar").value;
+            console.log("Jam masuk : " + jam_masuk);
+            console.log("Jam keluar : " + jam_keluar);
+            let lama_masuk = jam_keluar - jam_masuk;
+            console.log("Lama masuk : " + lama_masuk + " jam");
+            let biaya = 0;
+            const tarif_awal = 3000;
+            const tarif_perjam = 1000;
+            if (lama_masuk <= 2){ //apabila lama_masuk kurang dari sama dengan 2
+                biaya = tarif_awal;
+            }
+            else{
+                let jam_tambahan = lama_masuk - 2;
+                biaya = tarif_awal + (tarif_perjam * jam_tambahan)
+            }
+            console.log("Biaya Parkir : " + biaya)
+
+            //menampilkan biaya parkir ke HTML
+            let biaya_parkir = document.getElementById("biaya_parkir")
+            biaya_parkir.innerHTML = biaya
+        }
+
+        //Menghitung jumlah dua bilangan
+        function jumlah_bilangan() {
+            let a = Number(document.getElementById("bil1").value);
+            let b = Number(document.getElementById("bil2").value);
+            let c = a + b;
+            document.getElementById("bil3").value=c;
+        }
+    </script>
+</head>
+<body>
+    <!-- Menghitung luas dan keliling lingkaran -->
+    <h3>Menghitung Luas dan Keliling Lingkaran</h3>
+        Masukkan jari-jari lingkaran:
+        <input type="number" id="jari_jari" value="" size="10">
+        <button onclick="luas_lingkaran()">Klik</button> 
+        <br>
+        Hasil : <span id="hasil"></span>
+        <br>
+
+    <!-- Menghitung kurs rupiah -->
+    <h3>Menghitung Kurs Rupiah</h3>
+        Masukkan nilai rupiah :
+        <input type="number" id="rupiah" value="" size="20">
+        <button onclick="kurs_rupiah()">Klik</button>
+        <br>
+        Hasil : <span id="hasil_kedua"></span>
+        <br>
+
+    <!-- Menghitung biaya parkir -->
+    <h3>Menghitung Biaya Parkir</h3>
+        Jam Masuk : <input type="number" value="" size="10" id="masuk">
+        <br>
+        Jam Keluar : <input type="number" value="" size="10" id="keluar">
+        <br>
+        <button onclick="hitung_biaya_parkir()">Klik</button>
+        <br>
+        Biaya Parkir : <span id="biaya_parkir"></span>
+        <br>
+
+    <!-- Menghitung jumlah dua bilangan -->
+    <h3>Menghitung Jumlah Dua Bilangan</h3>
+    <form action="">
+        <input type="text" value="0" size="10" id="bil1" onchange="jumlah_bilangan()">
+        <br>
+        <b>+</b> 
+        <br>
+        <input type="text" value="0" size="10" id="bil2" onchange="jumlah_bilangan()">
+        <br>
+        <b>=</b>
+        <br>
+        <input type="text" value="" size="10" id="bil3">
+    </form>
+
+</body>
+</html>
