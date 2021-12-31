@@ -1,0 +1,44 @@
+h1 {
+    color: rgb(19, 6, 6);
+}
+
+h2 {
+    color: rgb(19, 6, 6);
+}
+
+h4 {
+    color: rgb(19, 6, 6);
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #080f27;
+    background-image: linear-gradient(315deg, #1b4474, #1d77b8 74%);
+    height: 100vh;
+}
+
+span {
+    color: white;
+}
+
+P {
+    color: white;
+}
+
+table {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.rigth_side {
+    float: right;
+}
