@@ -31,7 +31,7 @@
       $ns3 = ['id'=>3,'nim'=>'01130','uts'=>60,'uas'=>86,'tugas'=>70];
       $ns4 = ['id'=>4,'nim'=>'01134','uts'=>90,'uas'=>91,'tugas'=>82];
 
-      $ar_nilai = [$ns1, $ns2 , $ns3, $ns4];
+      $ar_nilai = [$ns1, $ns2 , $ns3, $ns4]; 
     ?>
 
     <!-- Tabel daftar siswa -->
