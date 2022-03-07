@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        select{
+            width: 150px;
+            height: 35px;
+            border: 2px solid rgb(0, 132, 255);
+            border-radius: 7px;
+        }
+        fieldset{
+            height: 600px;
+            border-radius: 10px;
+            border: 2px solid rgb(0, 132, 255);
+        }
+        img{
+            border: 1px solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+            <select>
+                <option value="jerapah"> Jerapah</option>
+                <option value="koala">Koala</option>
+                <option value="kucing" >Kucing</option>
+                <option value="unta" >Unta</option>
+                <option value="beruang">Beruang</option>
+                <option value="kura-kura">Kura-kura</option>
+            </select>
+            <br>
+            <br>
+            <img>
+
+    <script>
+        let imagePicker = document.querySelector("select")
+
+        imagePicker.onclick = function () {
+            let image = document.querySelector('img')
+            if (imagePicker.value == "jerapah") {
+                image.setAttribute("src", "img/Jerapah.jpg") 
+            } 
+            else if (imagePicker.value == "Koala") {
+                image.setAttribute("src", "img/Koala.jpg") 
+            } 
+            else if (imagePicker.value == "kucing") {
+                image.setAttribute("src", "img/Kucing.png") 
+            } 
+            else if (imagePicker.value == "unta") {
+                image.setAttribute("src", "img/Unta.jpg") 
+            } 
+            else if (imagePicker.value == "beruang") {
+                image.setAttribute("src", "img/Beruang.jpg") 
+            } 
+            else if (imagePicker.value == "kura-kura") {
+                image.setAttribute("src", "img/Kura-kura.jpg") 
+            }
+        }
+    </script>
+</body>
+</html>
